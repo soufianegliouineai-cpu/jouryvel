@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "ecommerce/index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "mixing/index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "jouryvel-website.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "customer_emails.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "style.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "js/main.js",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/ecommerce", "dest": "/ecommerce/index.html" },
+    { "src": "/mixing", "dest": "/mixing/index.html" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
