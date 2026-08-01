@@ -1,0 +1,69 @@
+---
+title: "JOURYVEL FORMULA v32.3 FROZEN"
+---
+
+LOCKED 2026-07-28 | CASABLANCA, MA | NO MORE EDITS
+
+Respecting your exact format: NAME = CODE(DESIGNER-NOTE) + CODE(DESIGNER-NOTE)...
+
+## TIER 1: ELIXIR 35 - 99 MAD | 17.5ml = 4.375ml x 4 | 14 DAYS MACERATION | 35% OIL
+
+1. SAHRA NOOR = H1(Bleu de Chanel-Bergamot) + H2(Sauvage-Jasmine) + H22(CK One-White Musk) + H44(Valentino Born in Roma-Vetiver)
+
+2. AMBRE SULTANI = U1(Baccarat Rouge 540-Saffron) + W6(Armani Code-Amber) + W58(La Vie Est Belle-Jasmine) + W64(Black Opium-Vanilla)
+
+3. HALAWA = W28(Scandal-Caramel) + W47(Kayali 28-Vanilla) + W37(Ambre Nuit-Amber) + W62(Libre-White Musk)
+
+4. MOUDIR = H9(Ombré Leather-Leather) + H13(Tobacco Vanille-Tobacco) + H5(Aventus-Oud) + H7(Terre d'Hermès-Cedar)
+
+5. QAHWA ZAHRA = W7(Black Opium-Coffee) + W5(Delina-Rose) + W25(Terre d'Hermès-Patchouli) + W49(Kalimat-Musk)
+
+6. ATLAS RIWAYA = H10(Le Male Elixir-Lavender) + H25(Sauvage-Bergamot) + H19(Invictus-Mint) + H6(Santal 33-Sandal)
+
+7. MALIK FOUAKEH = H4(Aventus-Apple) + H43(Scandal-Vanilla) + H48(Yara-Peach) + H12(Fahrenheit-Pine)
+
+8. ZAHRA MALAKIYA = W1(Coco Mademoiselle-Lily) + W3(Delina-Rose) + W65(Velvet Orchid-Orchid) + W42(La Vie Est Belle-Jasmine)
+
+9. RIYADI = H18(Acqua di Giò-Aquatic) + H25(Sauvage-Bergamot) + H2(Sauvage-Jasmine) + H37(Ambre Nuit-Amber)
+
+10. KERZAZA RIF = U27(Lost Cherry-Cherry) + W18(Good Girl-Almond) + W20(Black Opium-Vanilla) + W21(1 Million-Tonka)
+
+11. IGHRAA LAYLI = W2(Alien-Ylang) + W10(Scandal-Tuberose) + W26(Ambre Nuit-Amber) + W27(Kalimat-Musk)
+
+12. JANNAT WARD = W23(Paradoxe-Peony) + W59(Gucci Flora-Magnolia) + W40(Idôle-Lily) + W43(Libre-White Musk)
+
+13. MALAK ELIL = W8(Good Girl-Gardenia) + W9(La Vie Est Belle-Jasmine) + W11(Devotion-Orange Blossom) + W12(Black Opium-Vanilla)
+
+14. QOUAT SAHRA = H14(Spicebomb-Pepper) + H15(Sauvage Elixir-Ginger) + H16(Déclaration-Cardamom) + H21(Terre d'Hermès-Vetiver)
+
+15. MAUJ ATLANTIC = H3(Acqua di Giò-Sea Notes) + H30(Terre d'Hermès-Citrus) + H37(Ambre Nuit-Amber) + H40(Molecule 01-Musk)
+
+16. NAQA = W52(Pure Musc-Cotton) + W29(Libre-Clean Musk) + W38(My Way-White Tea) + W41(Kayali 36-Rice)
+
+## TIER 2: ELIXIR OUD 40 - 129 MAD | 20ml = 5ml x 4 | 21 DAYS MACERATION | 40% OIL
+
+17. OUD SULTANI = U1(Baccarat Rouge 540-Saffron) + H33(Oud for Greatness-Oud) + W58(La Vie Est Belle-Jasmine) + W64(Black Opium-Vanilla)
+
+18. JALD SOWD OUD = H24(Ombré Leather-Leather) + H33(Oud for Greatness-Oud) + H28(Tobacco Vanille-Tobacco) + H32(Ambre Nuit-Amber)
+
+19. MEDINA LAYL OUD = H29(Santal Royal-Incense) + H2(Sauvage-Jasmine) + H9(Ombré Leather-Leather) + H31(Oud Satin Mood-Patchouli)
+
+20. ASAL TABAC OUD = H8(Naxos-Honey) + H33(Oud for Greatness-Oud) + H10(Le Male Elixir-Lavender) + H17(Spicebomb-Spice)
+
+21. NAR ALMALIK OUD = H20(Delina-Rose) + H23(Royal Oud-Oud) + H26(Baccarat Rouge 540-Saffron) + H35(Ambre Nuit-Amber)
+
+22. ROUH WARD OUD = W22(Delina-Rose) + W24(Oud Satin Mood-Oud) + W30(La Vie Est Belle-Jasmine) + W31(Kalimat-Musk)
+
+23. DAHAB MALAKI OUD = H6(Santal 33-Sandal) + H11(Terre d'Hermès-Cedar) + H45(Oud Ispahan-Oud) + H27(Spicebomb-Spice)
+
+24. CHATII DHAB OUD = W4(LV Pacific Chill-Tea) + W50(Oud Bouquet-Oud) + W2(Alien-Ylang) + W51(Ambre Nuit-Amber)
+
+## PRODUCTION NOTES - FROZEN
+
+- Format: NAME = H#/W#/U#(Designer-Note)
+- Dosing T1: 4.375ml per oil = 17.5ml total oil per bottle
+- Dosing T2: 5ml per oil = 20ml total oil per bottle
+- Dilution T1: 17.5ml oil + 32.5ml DPG/Alcohol = 50ml bottle
+- Dilution T2: 20ml oil + 30ml DPG/Alcohol = 50ml bottle
+- Total Oils Used: 113/113 = 0% Waste
+- Status: FROZEN v32.3
