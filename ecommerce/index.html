@@ -1,1 +1,57 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>JOURYVEL</title></head><body><h1>Hello JOURYVEL</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOURYVEL Perfume E-Commerce</title>
+    <style>
+        :root {
+            --primary: #7c3aed;
+            --secondary: #d4af37;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Segoe UI, sans-serif; background: linear-gradient(135deg, #1a2332 0%, #0f172a 100%); color: #f1f5f9; }
+        .navbar { background: rgba(15, 23, 42, 0.95); position: sticky; top: 0; z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: 800; color: var(--secondary); }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-link { color: #cbd5e1; text-decoration: none; }
+        .cart-btn { background: var(--primary); color: white; padding: 0.75rem 1.5rem; border-radius: 8px; cursor: pointer; }
+        .hero { padding: 4rem 2rem; text-align: center; background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; background: linear-gradient(90deg, #ffffff, #cbd5e1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .products { max-width: 1400px; margin: 0 auto; padding: 4rem 2rem; display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+        .product-card { background: rgba(255,255,255,0.05); border-radius: 16px; padding: 1.5rem; }
+        .btn-add { background: var(--primary); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">JOURYVEL</div>
+        <div class="nav-links">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Shop</a>
+            <button class="cart-btn"><span>🛒 Cart</span><span id="count">0</span></button>
+        </div>
+    </nav>
+    <section class="hero">
+        <h1>JOURYVEL Premium Perfumes</h1>
+        <p>24 scientifically-crafted fragrances. 35-40% oil concentration.</p>
+        <button onclick="window.scrollTo({top:0,behavior:'smooth'});">Shop Now</button>
+    </section>
+    <main class="products">
+        <div class="product-card" data-name="SAHRA NOOR" data-price="99">
+            <h3>SAHRA NOOR</h3>
+            <p>99 MAD | 35% Oil | 16h longevity</p>
+            <button class="btn-add" onclick="addToCart('SAHRA NOOR', 99)">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="AMBRE SULTANI" data-price="99">
+            <h3>AMBRE SULTANI</h3>
+            <p>99 MAD | 35% Oil | 18h longevity</p>
+            <button class="btn-add" onclick="addToCart('AMBRE SULTANI', 99)">Add to Cart</button>
+        </div>
+    </main>
+    <script>
+        let cart = [];
+        function addToCart(name, price) { cart.push({name, price}); document.getElementById('count').textContent = cart.length; }
+    </script>
+</body>
+</html>
