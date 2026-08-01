@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOURYVEL - Customer Email Templates</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .email-header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .email-body {
+            padding: 40px;
+        }
+        
+        .email-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #2d3748;
+        }
+        
+        .hero-section {
+            background: #f7fafc;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 5px solid #667eea;
+        }
+        
+        .product-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .product-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .product-image {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .hero-specs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .spec-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .spec-label {
+            font-size: 0.9em;
+            color: #718096;
+            margin-bottom: 5px;
+        }
+        
+        .spec-value {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2d3748;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+        
+        .stain-indicator {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin: 5px;
+        }
+        
+        .stain-safe {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .stain-warning {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .email-footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #718096;
+            font-size: 0.9em;
+        }
+        
+        .template-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .template-card {
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .template-card:hover {
+            border-color: #667eea;
+            transform: translateY(-5px);
+        }
+        
+        .template-card.selected {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .template-preview {
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .template-preview::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+        }
+        
+        .template-preview::after {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 60px;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <div class="logo">JOURYVEL</div>
+            <p>Perfume Maison - Moroccan Excellence</p>
+        </div>
+        
+        <div class="email-body">
+            <h1 class="email-title">Welcome to JOURYVEL Family!</h1>
+            
+            <div class="hero-section">
+                <h2>🎉 Your Exclusive Launch Collection</h2>
+                <p>You've been selected as one of the first to experience JOURYVEL's scientific perfumery. Each elixir is crafted for Moroccan heat, skin safety, and 18-hour longevity.</p>
+            </div>
+            
+            <h3>Your Hero Products:</h3>
+            
+            <div class="product-showcase">
+                <div class="product-card">
+                    <div class="product-image">1</div>
+                    <h4>SAHRA NOOR DNA</h4>
+                    <p>Clean Beast</p>
+                    <div class="hero-specs">
+                        <div class="spec-item">
+                            <div class="spec-label">Longevity</div>
+                            <div class="spec-value">16h</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Stain</div>
+                            <div class="spec-value">0/5 ✓</div>
+                        </div>
+                    </div>
+                    <span class="stain-indicator stain-safe">SAFE FOR WHITE</span>
+                    <div class="price" style="font-size: 1.5em; color: #48bb78; margin: 10px 0;">329 MAD</div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">2</div>
+                    <h4>MOUDIR DNA</h4>
+                    <p>Corporate</p>
+                    <div class="hero-specs">
+                        <div class="spec-item">
+                            <div class="spec-label">Longevity</div>
+                            <div class="spec-value">16h</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Stain</div>
+                            <div class="spec-value">0/5 ✓</div>
+                        </div>
+                    </div>
+                    <span class="stain-indicator stain-safe">SAFE FOR WHITE</span>
+                    <div class="price" style="font-size: 1.5em; color: #48bb78; margin: 10px 0;">329 MAD</div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">3</div>
+                    <h4>AMBRE SULTANI DNA</h4>
+                    <p>Luxury Queen</p>
+                    <div class="hero-specs">
+                        <div class="spec-item">
+                            <div class="spec-label">Longevity</div>
+                            <div class="spec-value">18h</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Stain</div>
+                            <div class="spec-value">1/5 ⚠</div>
+                        </div>
+                    </div>
+                    <span class="stain-indicator stain-warning">DARK CLOTHES</span>
+                    <div class="price" style="font-size: 1.5em; color: #48bb78; margin: 10px 0;">379 MAD</div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">4</div>
+                    <h4>HALAWA DNA</h4>
+                    <p>Skin Gourmand</p>
+                    <div class="hero-specs">
+                        <div class="spec-item">
+                            <div class="spec-label">Longevity</div>
+                            <div class="spec-value">17h</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Stain</div>
+                            <div class="spec-value">1/5 ⚠</div>
+                        </div>
+                    </div>
+                    <span class="stain-indicator stain-warning">DARK CLOTHES</span>
+                    <div class="price" style="font-size: 1.5em; color: #48bb78; margin: 10px 0;">329 MAD</div>
+                </div>
+            </div>
+            
+            <div class="hero-section">
+                <h3>🔬 Scientific Excellence</h3>
+                <ul style="margin-left: 20px; margin-top: 15px;">
+                    <li><strong>90-Day Stability Tested</strong> at 40°C - No separation, no color change</li>
+                    <li><strong>White Shirt Certified</strong> - 0 stain after 48 hours</li>
+                    <li><strong>pH 5.5 Skin Safe</strong> - No irritation</li>
+                    <li><strong>Elite Oil DNA</strong> - Match to designer molecule profiles</li>
+                </ul>
+            </div>
+            
+            <div class="hero-section">
+                <h3>📦 Your Welcome Kit Includes:</h3>
+                <ul style="margin-left: 20px; margin-top: 15px;">
+                    <li>4 premium eau de parfum bottles (20ml each)</li>
+                    <li>Dual-language (Arabic/French) labels</li>
+                    <li>Morocco travel pouch</li>
+                    <li>Exclusivity certificate</li>
+                    <li>VIP customer care access</li>
+                </ul>
+            </div>
+            
+            <center>
+                <a href="#" class="cta-button">Track Your Order</a>
+            </center>
+            
+            <div class="hero-section">
+                <h3>💎 VIP Benefits</h3>
+                <ul style="margin-left: 20px; margin-top: 15px;">
+                    <li>Free bottle customization</li>
+                    <li>Early access to next collections</li>
+                    <li>Exclusive Moroccan events</li>
+                    <li>10% lifetime discount on all purchases</li>
+                </ul>
+            </div>
+            
+            <div class="hero-section">
+                <h3>⏰ Act Now - Limited Edition!</h3>
+                <p>This launch collection is limited to 500 bottles worldwide. Your selection will be fulfilled within 5-7 business days.</p>
+                <center>
+                    <a href="#" class="cta-button">Claim Your Spot</a>
+                </center>
+            </div>
+        </div>
+        
+        <div class="email-footer">
+            <p>© 2026 JOURYVEL - Perfume Maison</p>
+            <p>Made in Morocco with scientific precision</p>
+            <p>Contact: support@journeyvel.com | +212-XXX-XXXXXX</p>
+            <p>
+                <a href="#" style="color: #667eea;">Unsubscribe</a> | 
+                <a href="#" style="color: #667eea;">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Email template interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            const productCards = document.querySelectorAll('.product-card');
+            
+            productCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.style.transform = 'scale(1.05)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 300);
+                });
+            });
+            
+            const ctaButtons = document.querySelectorAll('.cta-button');
+            ctaButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Show notification
+                    const notification = document.createElement('div');
+                    notification.style.cssText = `
+                        position: fixed;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background: linear-gradient(135deg, #48bb78, #22c55e);
+                        color: white;
+                        padding: 20px 40px;
+                        border-radius: 15px;
+                        font-weight: bold;
+                        z-index: 10000;
+                        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+                        animation: fadeIn 0.3s ease;
+                    `;
+                    notification.textContent = 'Feature Coming Soon!';
+                    document.body.appendChild(notification);
+                    
+                    setTimeout(() => {
+                        notification.style.animation = 'fadeOut 0.3s ease';
+                        setTimeout(() => {
+                            document.body.removeChild(notification);
+                        }, 300);
+                    }, 2000);
+                });
+            });
+            
+            // Add animation styles
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+                @keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
